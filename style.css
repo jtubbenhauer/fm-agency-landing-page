@@ -24,7 +24,7 @@
   padding: 0;
   box-sizing: border-box;
   font-size: 18px;
-  /* /* font-family: "Barlow", sans-serif; */
+  font-family: "Barlow", sans-serif;
   font-family: "Fraunces", serif;
 }
 
@@ -39,7 +39,7 @@
 .navbar {
   background-color: #3ebfff;
   width: 100vw;
-  padding: 1rem;
+  padding: 2rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -81,9 +81,38 @@
 
 .desktop-menu {
   display: flex;
+  align-items: center;
+  justify-content: space-between;
   gap: 1rem;
   color: white;
   font: "Barlow";
+}
+
+.menu-item {
+  font-family: "Barlow";
+}
+
+.contact-btn {
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 2rem;
+}
+
+.two-column {
+  display: flex;
+  align-items: center;
+  width: 100vw;
+  justify-content: space-evenly;
+}
+
+.column-one {
+  width: 50%;
+  background-color: aqua;
+}
+
+.column-two {
+  width: 50%;
+  background-color: red;
 }
 
 /* Desktop */
@@ -97,5 +126,14 @@
 @media only screen and (max-width: 750px) {
   .desktop {
     display: none;
+  }
+
+  .two-column {
+    flex-direction: column-reverse;
+  }
+
+  .column-one,
+  .column-two {
+    width: 100%;
   }
 }
