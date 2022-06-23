@@ -1,0 +1,24 @@
+// Header
+
+.header-container {
+  width: 100vw;
+
+  .header-img-desktop,
+  .header-img-mobile {
+    position: relative;
+  }
+
+  .header-img-desktop {
+    display: none;
+  }
+
+  @media (min-width: 768px) {
+    .header-img-desktop {
+      display: block;
+    }
+
+    .header-img-mobile {
+      display: none;
+    }
+  }
+}

@@ -1,0 +1,28 @@
+// Navbar
+
+.navbar-container {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  padding: 1rem;
+  @include flex(row, center, space-between);
+
+  .hamburger {
+    display: block;
+    width: 1.5rem;
+  }
+
+  @media (min-width: 768px) {
+    .hamburger {
+      display: none;
+    }
+  }
+
+  .desktop-menu {
+    display: none;
+
+    @media (min-width: 768px) {
+      display: block;
+    }
+  }
+}

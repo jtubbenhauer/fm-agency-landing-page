@@ -1,22 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:opsz,wght@9..144,700;9..144,900&display=swap");
-/* Graphic design text */
-/* Photography text */
-/* Footer */
-/* Neutral */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-size: 18px;
-  font-family: "Barlow", sans-serif;
-  font-family: "Fraunces", serif;
-}
-
-img {
-  width: 100%;
-  max-width: 100%;
-}
-
 .header-container {
   width: 100vw;
 }
@@ -53,4 +35,30 @@ img {
   .navbar-container .hamburger {
     display: none;
   }
+}
+.navbar-container .desktop-menu {
+  display: none;
+}
+@media (min-width: 768px) {
+  .navbar-container .desktop-menu {
+    display: block;
+  }
+}
+
+/* Graphic design text */
+/* Photography text */
+/* Footer */
+/* Neutral */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 18px;
+  font-family: "Barlow", sans-serif;
+  font-family: "Fraunces", serif;
+}
+
+img {
+  width: 100%;
+  max-width: 100%;
 }/*# sourceMappingURL=main.css.map */
