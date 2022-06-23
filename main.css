@@ -10,4 +10,47 @@
   font-size: 18px;
   font-family: "Barlow", sans-serif;
   font-family: "Fraunces", serif;
+}
+
+img {
+  width: 100%;
+  max-width: 100%;
+}
+
+.header-container {
+  width: 100vw;
+}
+.header-container .header-img-desktop,
+.header-container .header-img-mobile {
+  position: relative;
+}
+.header-container .header-img-desktop {
+  display: none;
+}
+@media (min-width: 768px) {
+  .header-container .header-img-desktop {
+    display: block;
+  }
+  .header-container .header-img-mobile {
+    display: none;
+  }
+}
+
+.navbar-container {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.navbar-container .hamburger {
+  display: block;
+  width: 1.5rem;
+}
+@media (min-width: 768px) {
+  .navbar-container .hamburger {
+    display: none;
+  }
 }/*# sourceMappingURL=main.css.map */

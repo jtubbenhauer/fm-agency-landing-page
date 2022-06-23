@@ -24,3 +24,56 @@ $white: hsl(0, 0%, 100%);
   font-family: "Barlow", sans-serif;
   font-family: "Fraunces", serif;
 }
+
+img {
+  width: 100%;
+  max-width: 100%;
+}
+
+// Header
+
+.header-container {
+  width: 100vw;
+
+  .header-img-desktop,
+  .header-img-mobile {
+    position: relative;
+  }
+
+  .header-img-desktop {
+    display: none;
+  }
+
+  @media (min-width: 768px) {
+    .header-img-desktop {
+      display: block;
+    }
+
+    .header-img-mobile {
+      display: none;
+    }
+  }
+}
+
+// Navbar
+
+.navbar-container {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  .hamburger {
+    display: block;
+    width: 1.5rem;
+  }
+
+  @media (min-width: 768px) {
+    .hamburger {
+      display: none;
+    }
+  }
+}
