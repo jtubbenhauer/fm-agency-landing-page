@@ -1,0 +1,22 @@
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+
+  @include screen-md {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.desktop {
+  display: none;
+
+  @include screen-md {
+    display: block;
+  }
+}
+
+.mobile {
+  @include screen-md {
+    display: none;
+  }
+}

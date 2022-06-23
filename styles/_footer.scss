@@ -1,0 +1,26 @@
+footer {
+  background-color: #90d4c5;
+  @include flex(column, center, center);
+
+  .footer-logo {
+    width: 200px;
+    fill: $dark-cyan;
+  }
+
+  .footer-menu {
+    @include flex(row, center, center);
+    width: 90%;
+
+    * {
+      margin: 0 2rem;
+    }
+  }
+
+  .social-icons {
+    @include flex(row, center, center);
+
+    * {
+      margin: 0 1rem;
+    }
+  }
+}

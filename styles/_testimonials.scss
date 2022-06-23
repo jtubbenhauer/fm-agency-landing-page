@@ -1,0 +1,21 @@
+.testimonials-wrapper {
+  @include flex(column, center, center);
+  padding: 2rem 1rem;
+}
+
+.testimonials {
+  @include flex(column, center, center);
+
+  @include screen-md {
+    @include flex(row, center, center);
+  }
+}
+
+.testimonial-item {
+  @include flex(column, center, center);
+
+  img {
+    width: 4rem;
+    border-radius: 50%;
+  }
+}
