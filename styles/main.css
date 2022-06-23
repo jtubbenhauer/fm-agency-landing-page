@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:opsz,wght@9..144,700;9..144,900&display=swap");
 .header-container {
   width: 100vw;
+  display: flex;
 }
 .header-container .header-img-desktop,
 .header-container .header-img-mobile {
@@ -24,6 +25,7 @@
   top: 0;
   padding: 1rem;
   display: flex;
+  flex-direction: row;
   align-items: center;
   justify-content: space-between;
 }
@@ -49,6 +51,61 @@
 /* Photography text */
 /* Footer */
 /* Neutral */
+main {
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-areas: "image1" "text1" "image2" "text2" "ta1" "ta2";
+}
+main .text-content1 {
+  grid-area: text1;
+}
+main .text-content2 {
+  grid-area: text2;
+}
+main .image1 {
+  grid-area: image1;
+}
+main .image2 {
+  grid-area: image2;
+}
+main .text-image1 {
+  grid-area: ta1;
+}
+main .text-image2 {
+  grid-area: ta2;
+}
+main .text-image1,
+main .text-image2 {
+  position: relative;
+}
+@media (min-width: 768px) {
+  main {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "text1 image1" "image2 text2" "ta1 ta2";
+  }
+}
+main .desktop {
+  display: none;
+}
+@media (min-width: 768px) {
+  main .desktop {
+    display: block;
+  }
+}
+main .mobile {
+  display: block;
+}
+@media (min-width: 768px) {
+  main .mobile {
+    display: none;
+  }
+}
+main .image-text {
+  position: absolute;
+  bottom: 0;
+}
+
 * {
   margin: 0;
   padding: 0;
